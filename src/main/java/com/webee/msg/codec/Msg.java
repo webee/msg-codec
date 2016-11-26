@@ -4,7 +4,13 @@ package com.webee.msg.codec;
  * Created by webee on 16/11/23.
  */
 
-public interface Msg {
-    int type();
-    <T extends Msg> T msg();
+public abstract class Msg {
+    /**
+     * help method to cast current msg to it's actual type.
+     * @param <T> actual msg type.
+     * @return concrete msg.
+     */
+    public <T extends Msg> T msg() {
+        return (T)this;
+    }
 }
