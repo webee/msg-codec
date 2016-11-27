@@ -14,6 +14,7 @@ public interface ArrayX {
     /**
      * set value from array.
      * @param array the array to digest.
+     * @return digest count.
      */
-    void digestArray(Object[] array);
+    int digestArray(Object[] array);
 }
