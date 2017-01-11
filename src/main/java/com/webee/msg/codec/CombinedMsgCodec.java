@@ -14,9 +14,13 @@ public class CombinedMsgCodec<T> implements MsgCodec<T> {
     @Override
     public T encode(Msg msg) {
         for (MsgCodec<T> codec : codecs) {
-            T s = codec.encode(msg);
-            if (s != null) {
-                return s;
+            try {
+                T s = codec.encode(msg);
+                if (s != null) {
+                    return s;
+                }
+            } catch (Throwable r) {
+                r.printStackTrace();
             }
         }
         return null;
@@ -25,9 +29,13 @@ public class CombinedMsgCodec<T> implements MsgCodec<T> {
     @Override
     public Msg decode(T msg) {
         for (MsgCodec<T> codec : codecs) {
-            Msg m = codec.decode(msg);
-            if (m != null) {
-                return m;
+            try {
+                Msg m = codec.decode(msg);
+                if (m != null) {
+                    return m;
+                }
+            } catch (Throwable r) {
+                r.printStackTrace();
             }
         }
         return null;
