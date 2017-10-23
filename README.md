@@ -1,6 +1,6 @@
 # msg-codec
 
-[![Release](https://img.shields.io/github/release/webee/msg-codec.svg?label=maven version)](https://jitpack.io/#webee/msg-codec)
+[![Release](https://img.shields.io/github/release/webee/msg-codec.svg?label=maven%20version)](https://jitpack.io/#webee/msg-codec)
 
 
 Message and Codec Interface.
