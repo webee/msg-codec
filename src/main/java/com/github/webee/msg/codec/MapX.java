@@ -1,4 +1,4 @@
-package com.webee.msg.codec;
+package com.github.webee.msg.codec;
 
 import java.util.Map;
 

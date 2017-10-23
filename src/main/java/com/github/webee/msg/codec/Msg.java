@@ -1,4 +1,4 @@
-package com.webee.msg.codec;
+package com.github.webee.msg.codec;
 
 /**
  * Created by webee on 16/11/23.
