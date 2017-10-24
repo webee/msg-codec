@@ -13,6 +13,7 @@ public abstract class MapMsg extends AbstractMsg implements MapX {
     }
 
     @Override
-    public void digestMap(Map<String, Object> map) {
+    public MapMsg digestMap(Map<String, Object> map) {
+        return this;
     }
 }

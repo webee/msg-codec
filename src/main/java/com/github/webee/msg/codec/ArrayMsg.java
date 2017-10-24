@@ -10,7 +10,7 @@ public abstract class ArrayMsg extends AbstractMsg implements ArrayX {
     }
 
     @Override
-    public int digestArray(Object[] array) {
-        return 0;
+    public ArrayMsg digestArray(Object[] array) {
+        return this;
     }
 }
