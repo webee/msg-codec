@@ -13,8 +13,7 @@ public abstract class MapArrayMsg extends AbstractMsg implements MapX, ArrayX {
     }
 
     @Override
-    public MapArrayMsg digestMap(Map<String, Object> map) {
-        return this;
+    public void digestMap(Map<String, Object> map) {
     }
 
     @Override
@@ -23,7 +22,6 @@ public abstract class MapArrayMsg extends AbstractMsg implements MapX, ArrayX {
     }
 
     @Override
-    public MapArrayMsg digestArray(Object[] array) {
-        return this;
+    public void digestArray(Object[] array) {
     }
 }

@@ -17,5 +17,5 @@ public interface MapX {
      * set msg key/value from map.
      * @param map the map to digest.
      */
-    MapX digestMap(Map<String, Object> map);
+    void digestMap(Map<String, Object> map);
 }
